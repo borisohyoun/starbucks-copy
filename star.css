@@ -1,0 +1,803 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#wrap {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#wrap * {
+    box-sizing: border-box;
+}
+
+#wrap a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navwrap {
+    z-index: 11;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    position: fixed;
+    background: #f6f5ef;
+}
+
+.logonav {
+    width: 1100px;
+    height: 120px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logonav .logo {
+    height: 75px;
+    left: 20px;
+    top: 22px;
+    width: 75px;
+    position: absolute;
+}
+
+.logonav .logo a {
+    background: url(img/common/logo.png);
+    background-repeat: no-repeat;
+    text-indent: -20000px;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.logonav .mininav {
+    height: 20px;
+    right: 93px;
+    top: 15px;
+    width: 464px;
+    display: block;
+    position: absolute;
+}
+
+.logonav .mininav ul li {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.logonav .mininav ul li a {
+    color: dimgray;
+}
+
+.logonav .mininav ul li.mininav_01 {
+    width: 76px;
+}
+
+.logonav .mininav ul li.mininav_02 {
+    width: 107px;
+    margin-left: 1px;
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.logonav .mininav ul li.mininav_03 {
+    width: 181px;
+    margin-left: 1px;
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.logonav .mininav ul li.mininav_04 {
+    width: 97px;
+    margin-left: 1px;
+    border-left: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.mainnavwrap {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    top: 54px;
+    height: 66px;
+}
+
+.mainnavwrap .mainnav {
+    width: 1100px;
+    height: 66px;
+    margin: 0 auto;
+}
+
+.mainnavwrap .mainnav ul {
+    float: right;
+}
+
+.mainnavwrap .mainnav > ul > li {
+    text-align: center;
+    float: left;
+    padding-top: 5px;
+    font-size: 15px;
+    height: 66px;
+}
+
+.mainnavwrap .mainnav ul li a {
+    color: dimgray;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_1 {
+    width: 89px;
+}
+
+.mainnavwrap .mainnav .insubnav_1 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_2 {
+    width: 80px;
+}
+
+.mainnavwrap .mainnav .insubnav_2 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_3 {
+    width: 80px;
+}
+
+.mainnavwrap .mainnav .insubnav_3 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_4 {
+    width: 150px;
+}
+
+.mainnavwrap .mainnav .insubnav_4 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_5 {
+    width: 218px;
+}
+
+.mainnavwrap .mainnav .insubnav_5 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+.mainnavwrap .mainnav ul li.mainnav_6 {
+    width: 120px;
+}
+
+.mainnavwrap .mainnav .insubnav_6 {
+    display: block;
+    width: 100%;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    padding: 20px 120px;
+    display: none;
+}
+
+/*hober시 addclass*/
+
+.addnav {
+    background: black;
+    color: white;
+}
+
+.mainnav > ul > li > h2 * {
+    display: block;
+}
+
+.mainnavwrap .mainnav > ul > li > div ul {
+    width: 220px;
+    float: left;
+    /*    height: 160px;*/
+    display: block;
+    margin-left: 30px;
+}
+
+.mainnavwrap .mainnav > ul > li > div ul:first-child {
+    margin-left: 0;
+}
+
+.mainnavwrap .mainnav > ul > li > div {
+    color: white;
+}
+
+.mainnavwrap .mainnav > ul > li ul .minititle {
+    color: white;
+    font-size: 18px;
+    padding: 3px;
+    margin: 5px auto;
+}
+
+.mainnavwrap .mainnav > ul > li ul li {
+    color: whitesmoke;
+    font-size: 12px;
+    margin: 5px;
+}
+
+#main {
+    width: 100%;
+    position: relative;
+}
+
+#main .main_wrap {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+
+#main .promotionwrap {
+    background: url(img/main/summer/bev_bg.jpg);
+    width: 100%;
+    height: 604px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main .promotionwrap .popup {
+    background: url(img/main/summer/badge_main_summer3.png);
+    background-size: 100% auto;
+    width: 163px;
+    height: 248px;
+    position: fixed;
+    left: 50%;
+    margin-left: 463px;
+    top: 121px;
+    z-index: 9;
+}
+
+#main .promotionwrap .summerpromotion {
+    position: relative;
+    height: 100 !important;
+}
+
+#main .promotionwrap .summerpromotion .emblem {
+    background: url(img/main/summer/18_emblem.png);
+    width: 377px;
+    height: 92px;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    margin-left: -560px;
+    display: none;
+}
+
+#main .promotionwrap .summerpromotion .bev1 {
+    display: none;
+}
+
+#main .promotionwrap .summerpromotion .bev1_cup {
+    background: url(img/main/summer/bev1_cup.png);
+    width: 201px;
+    height: 303px;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -170px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .bev1_txt {
+    background: url(img/main/summer/bev1_txt.png);
+    width: 127px;
+    height: 90px;
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    margin-left: -140px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .bev2 {
+    display: none;
+}
+
+#main .promotionwrap .summerpromotion .bev2_cup {
+    background: url(img/main/summer/bev2_cup.png);
+    width: 219px;
+    height: 395px;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: 40px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .bev2_txt {
+    background: url(img/main/summer/bev2_txt.png);
+    width: 243px;
+    height: 90px;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    margin-left: 25px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .bev3 {
+    display: none;
+}
+
+#main .promotionwrap .summerpromotion .bev3_cup {
+    background: url(img/main/summer/bev3_cup.png);
+    width: 201px;
+    height: 303px;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: 260px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .bev3_txt {
+    background: url(img/main/summer/bev3_txt.png);
+    width: 127px;
+    height: 90px;
+    position: absolute;
+    top: 490px;
+    left: 50%;
+    margin-left: 300px;
+    z-index: 4;
+}
+
+#main .promotionwrap .summerpromotion .pop2_img {
+    background: url(img/main/summer/pop2_img.png);
+    width: 379px;
+    height: 419px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+#main .notice {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#main .notice .noticeleft {
+    float: left;
+    background: black;
+    width: 50%;
+    height: 60px;
+}
+
+#main .notice .noticeright {
+    background: #f6f5ef;
+    width: 50%;
+    height: 60px;
+    float: left;
+}
+
+#main .notice .noticetext {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -400px;
+    height: 37px;
+    width: 800px;
+    top: 10px;
+}
+
+#main .notice .noticetext .ntleft {
+    width: 400px;
+    height: 34px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+#main .notice .noticetext .ntleft_title {
+    position: relative;
+    left: 0;
+    background: url(img/common/notice_ttl.png) no-repeat;
+    width: 80px;
+    height: 25px;
+    float: left;
+    top: 0;
+}
+
+#main .notice .noticetext .ntleft .ntleft_banner {
+    width: 280px;
+    left: 100px;
+    top: 0;
+    position: absolute;
+    float: left;
+    height: 25px;
+}
+
+#main .notice .noticetext .ntleft .ntleft_banner li {
+    top: 0;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    padding: 3px;
+}
+
+#main .notice .noticetext .ntleft .ntleft_banner li:not(:first-child) {
+    display: none;
+}
+
+#main .notice .noticetext .ntright {}
+
+#main .rewards {
+    width: 100%;
+    position: relative;
+    height: 220px;
+}
+
+#main .rewards .rewards_wrap {
+    width: 1600px;
+}
+
+#main .rewards .rewardsleft {
+    background: #272727;
+    width: 40%;
+    height: 220px;
+    position: absolute;
+    left: 0;
+}
+
+#main .rewards .rewardsleft .rl_logo {
+    background: url(img/main/reward_star_bg_m.png);
+    float: left;
+    width: 407px;
+    height: 220px;
+    background-repeat: no-repeat;
+    left: 50%;
+    position: absolute;
+    margin-left: 50px;
+    z-index: 5;
+}
+
+#main .rewards .rewardsleft .rl_logo .rl_logoword {
+    width: 214px;
+    height: 45px;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+}
+
+#main .rewards .rewardsright {
+    background: #d6c798;
+    width: 60%;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 4;
+}
+
+#main .rewards .rewardsright .rr_text {
+    background: url(img/main/reward_texbg.jpg);
+    width: 80%;
+    height: 220px;
+    position: absolute;
+    right: 50%;
+    margin-right: -180px;
+    z-index: 4;
+}
+
+#main .newbeans {
+    background: url(img/main/summer/new_coffee_bg.jpg);
+    height: 572px;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+#main .newbeans .beansimg {
+    background: url(img/main/summer/new_bean.png);
+    height: 499px;
+    width: 493px;
+    left: 20%;
+    margin-left: -40px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#main .newbeans .beansmention .beansttl {
+    background: url(img/main/summer/new_bean_ttl.png);
+    height: 57px;
+    width: 320px;
+    left: 50%;
+    margin-top: 200px;
+    position: absolute;
+}
+
+#main .newbeans .beansmention .beanstxt {
+    background: url(img/main/summer/new_bean_txt.png);
+    height: 95px;
+    width: 488px;
+    left: 50%;
+    margin-top: 280px;
+    position: absolute;
+}
+
+#main .reservebeans {
+    background: url(img/main/summer/reserve_bg3.jpg);
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+}
+
+#main .reservebeans .reservelogo {
+    background: url(img/main/reserve_coffee_logo.png);
+    width: 100px;
+    height: 181px;
+    left: 10%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 140px;
+    position: absolute;
+}
+
+#main .reservebeans .reservecoment {
+    background: url(img/main/summer/black_reserve_txt3.png);
+    width: 450px;
+    height: 165px;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+#main .reservebeans .reserveflower {
+    background: url(img/main/summer/res_bean_180713.png);
+    left: 50%;
+    width: 550px;
+    height: 420px;
+    position: absolute;
+}
+
+#main .pickyour {
+    background: #45434c;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+#main .pickyour .pickwrap {
+    background: url(img/main/fav_prod_bg_new.jpg) center center fixed;
+    height: 700px;
+    width: 1480px;
+    margin: auto;
+    position: relative;
+}
+
+#main .pickyour .picktext {
+    width: 400px;
+    left: -700px;
+    position: absolute;
+}
+
+#main .pickyour .picktext_01 {
+    background: url(img/main/fav_prod_txt01.png);
+    width: 270px;
+    height: 204px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 120px;
+    z-index: 7;
+    margin-left: 100px;
+}
+
+#main .pickyour .picktext_02 {
+    background: url(img/main/fav_prod_txt02.png);
+    background-repeat: no-repeat;
+    width: 362px;
+    height: 156px;
+    top: 400px;
+    position: absolute;
+}
+
+#main .pickyour .pickpic {
+    background: url(img/main/summer/fav_prod_img.png);
+    width: 612px;
+    height: 411px;
+    background-size: 100% auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 160px;
+}
+
+#main .reservelogo {
+    background: url(img/main/reserve_bg.jpg) center center fixed no-repeat #060606;
+    background-size: auto 100%;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+#main .reservelogo .medalwrap {
+    position: absolute;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    margin-left: -167px;
+    top: 22%;
+    overflow: hidden;
+}
+
+#main .reservelogo .medallogo {
+    background: url(img/main/reserve_medal01.png);
+    position: absolute;
+    width: 334px;
+    height: 334px;
+    background-repeat: no-repeat;
+    margin: -167px 0 0 -167px;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+}
+
+#main .reservelogo .medaltext {
+    background: url(img/main/reserve_medal02.png);
+    position: absolute;
+    width: 334px;
+    height: 334px;
+    background-repeat: no-repeat;
+    margin: -167px 0 0 -167px;
+    left: 50%;
+    top: 50%;
+}
+
+#main .drive {
+    background: url(img/main/store_bg.jpg);
+    width: 100%;
+    height: 430px;
+    position: relative;
+}
+
+#main .drive .driveimg {
+    width: 100%;
+    left: 50%;
+    margin-left: -640px;
+    position: absolute;
+}
+
+#main .drive .driveimg .driveimg_01 {
+    background: url(img/main/store_exp_img02.png);
+    width: 366px;
+    height: 312px;
+    z-index: 4;
+    left: 140px;
+    position: absolute;
+}
+
+#main .drive .driveimg .driveimg_02 {
+    background: url(img/main/store_exp_img01.png);
+    width: 228px;
+    height: 228px;
+    z-index: 5;
+    left: 340px;
+    top: 180px;
+    position: absolute;
+}
+
+#main .drive .driveimg .driveimg_03 {
+    background: url(img/main/store_exp_img03.png);
+    width: 343px;
+    height: 142px;
+    z-index: 5;
+    left: 600px;
+    position: absolute;
+    top: -60px;
+}
+
+#main .drive .drivetext {
+    width: 800px;
+    left: 50%;
+    top: 150px;
+    position: absolute;
+}
+
+#main .drive .drivetext .drivetext_01 {
+    background: url(img/common/store_txt01.png);
+    width: 385px;
+    height: 54px;
+    position: absolute;
+}
+
+#main .drive .drivetext_02 {
+    background: url(img/common/store_txt02.png);
+    width: 366px;
+    height: 61px;
+    top: 70px;
+    position: absolute;
+}
+
+#main .drive .storechac {
+    background: url(img/main/store_exp_img04.png);
+    width: 230px;
+    height: 102px;
+    position: absolute;
+    right: 330px;
+    top: 330px;
+    z-index: 4;
+}
+
+#footer {
+    background: #2C2A29;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    z-index: 5;
+}
+
+#footer .footer_wrap {
+    width: 1000px;
+    position: relative;
+    padding: 32px 0 35px 0;
+    display: inline-block;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: 50px;
+    background: url(img/footer/footer_logo.png) right 8px;
+    background-repeat: no-repeat;
+}
+
+#footer .footer_wrap ul {
+    float: left;
+    color: white;
+    width: 185px;
+    display: block;
+}
+
+#footer .footer_wrap ul .footerlist_1 {
+    margin-bottom: 15px;
+    font-style: bold;
+    font-size: 17px;
+}
+
+#footer .footer_wrap ul li {
+    margin-top: 8px;
+    font-size: 13px;
+}
